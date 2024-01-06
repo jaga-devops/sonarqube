@@ -8,6 +8,7 @@ pipeline {
         stage('Build'){
             steps {
 		dir('**/addressbook/addressbook_main')
+		sh 'pwd'
                 sh 'mvn clean package'
             }    
         }
